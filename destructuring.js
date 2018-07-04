@@ -20,6 +20,11 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
+const color=carDetails.color;
+const make=carDetails.make;
+const model=carDetails.model;
+const year=carDetails.year;
+
 
 //Code Here
 
@@ -34,8 +39,8 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
-  
+   let {firstName, lastName, title} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,8 +59,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function totalPopulation(obj){
+  let {utah, california,texas,arizona}=obj;
+  return utah+=california+=texas+=arizona
+};
+  
 
 ////////// PROBLEM 4 //////////
 
@@ -68,7 +76,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 5 //////////
